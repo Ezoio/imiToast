@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "imi_toast",
+  "description": "定时提醒程序",
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "imi.html",
+    "default_icon": "imi.ico"
+  },
+  "icons": {
+    "128" : "imi.ico"
+  },
+  "permissions": [
+    "tabs", "http://*/*","https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "imi.js"
+      ]
+    }
+  ]
+}
