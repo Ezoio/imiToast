@@ -21,18 +21,12 @@ function showNotice(msg) {
             lang: "hi",
             requireInteraction: true,
             //tag: "testTag",
-            icon: "https://www.easyicon.net/api/resizeApi.php?id=1168361&size=128",
+            icon: "https://raw.githubusercontent.com/Ezoio/imiToast/master/imi_toast/imi.ico",
             body: msg?msg:'道路千万条，身体第一条\r\n 久坐不运动，亲人两行泪。'
         });
         setTimeout(function(){
           notification.close();
         },3000)
-        // notification.onclick = function (event) {
-        //     //回到发送此通知的页面
-        //     window.focus();
-        //     //回来后要做什么
-        //     console.log("I'm back");
-        // }
     }
     //权限判断
     if (Notification.permission == "granted") {
