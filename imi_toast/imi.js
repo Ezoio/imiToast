@@ -22,7 +22,7 @@ function showNotice(msg) {
             requireInteraction: true,
             //tag: "testTag",
             icon: "https://raw.githubusercontent.com/Ezoio/imiToast/master/imi_toast/imi.ico",
-            body: msg?msg:'道路千万条，身体第一条\r\n 久坐不运动，亲人两行泪。'
+            body: msg?msg:'快起来动动吧！'
         });
         setTimeout(function(){
           notification.close();
